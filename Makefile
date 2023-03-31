@@ -2,11 +2,11 @@
 OUTPUT = bootloader.bin
 
 # Define the names of the source files
-SOURCES = bootloader.c
+SOURCES = main.c
 
 # Define the compiler and linker commands
-CC = gcc
-LD = ld
+CC = x86_64-elf-gcc
+LD = x86_64-elf-ld
 
 # Define the compiler and linker flags
 CFLAGS = -nostdlib -m16 -c
